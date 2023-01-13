@@ -21,6 +21,9 @@ export namespace Components {
         "middle": string;
     }
     interface OscwcVideoSlider {
+        "poster": string;
+        "sourceMpeg": string;
+        "sourceWebm": string;
     }
 }
 declare global {
@@ -57,6 +60,9 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface OscwcVideoSlider {
+        "poster"?: string;
+        "sourceMpeg"?: string;
+        "sourceWebm"?: string;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;

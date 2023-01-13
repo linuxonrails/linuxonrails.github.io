@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'oscwc-video-slider',
@@ -6,13 +6,17 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class OscwcVideoSlider {
+  @Prop() poster: string;
+  @Prop() sourceMpeg: string;
+  @Prop() sourceWebm: string;
 
   render() {
     return (
       <Host>
         <section id="slider" class="slider-element full-screen" style={{ height: '846px' }}>
           <div class="full-screen dark section nopadding nomargin noborder ohidden" style={{ height: '846px' }}>
-            <div class="container clearfix">
+            <div class="container">
+            { /*
               <div class="slider-caption slider-caption-center" style={{ top: '323.203px' }}>
                 <h2 data-animate="fadeInUp" class="fadeInUp animated">Maratón Alpino Jarapalos</h2>
                 <p class="d-none d-sm-block fadeInUp animated" data-animate="fadeInUp" data-delay="200">
@@ -20,12 +24,13 @@ export class OscwcVideoSlider {
                   Campeonato Andalucía de Trail Categorías Menores
                 </p>
               </div>
+            */ }
             </div>
 
             <div class="video-wrap">
-              <video id="video-home" poster="https://www.maratonjarapalos.com/images/videos/explore.jpg" preload="auto" loop autoplay muted>
-                <source src="https://www.maratonjarapalos.com/jarapalos_2020_720p.mp4" type="video/mp4"></source>
-                <source src="https://www.maratonjarapalos.com/images/videos/jarapalos_2020_720p.webm" type="video/webm"></source>
+              <video id="video-home" poster={this.poster} preload="auto" loop autoplay muted>
+                <source src={this.sourceMpeg} type="video/mp4"></source>
+                <source src={this.sourceWebm} type="video/webm"></source>
               </video>
               <div class="video-overlay" style={{ backgroundColor: 'rgba(0,0,0,0.05)' }}>
                 ...
