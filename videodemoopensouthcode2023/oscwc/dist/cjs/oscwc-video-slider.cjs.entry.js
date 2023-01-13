@@ -15,7 +15,7 @@ const OscwcVideoSlider = class {
     this.playing = true;
   }
   render() {
-    return (index.h(index.Host, null, index.h("div", { class: "video-wrapper" }, index.h("video", { class: "video", poster: this.poster, preload: "auto", loop: false, autoplay: true, muted: true }, index.h("source", { src: this.sourcempeg, type: "video/mp4" }), index.h("source", { src: this.sourcewebm, type: "video/webm" })), index.h("div", { class: "video-overlay" }))));
+    return (index.h(index.Host, null, index.h("div", { class: "video-wrapper" }, index.h("video", { class: "video", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, index.h("source", { src: this.sourcempeg, type: "video/mp4" }), index.h("source", { src: this.sourcewebm, type: "video/webm" })), index.h("div", { class: "video-overlay" }))));
   }
 };
 OscwcVideoSlider.style = oscwcVideoSliderCss;

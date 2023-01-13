@@ -16,7 +16,7 @@ export class OscwcVideoSlider {
     return (
       <Host>
         <div class="video-wrapper">
-          <video class="video" poster={this.poster} preload="auto" loop={false} autoplay={true} muted>
+          <video class="video" poster={this.poster} preload="auto" loop autoplay={true} muted>
             <source src={this.sourcempeg} type="video/mp4"></source>
             <source src={this.sourcewebm} type="video/webm"></source>
           </video>
