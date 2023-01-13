@@ -32,11 +32,11 @@ const OscwcVideoSlider = class {
   constructor(hostRef) {
     index.registerInstance(this, hostRef);
     this.poster = undefined;
-    this.sourceMpeg = undefined;
-    this.sourceWebm = undefined;
+    this.sourcempeg = undefined;
+    this.sourcewebm = undefined;
   }
   render() {
-    return (index.h(index.Host, null, index.h("section", { id: "slider", class: "slider-element full-screen", style: { height: '846px' } }, index.h("div", { class: "full-screen dark section nopadding nomargin noborder ohidden", style: { height: '846px' } }, index.h("div", { class: "container" }), index.h("div", { class: "video-wrap" }, index.h("video", { id: "video-home", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, index.h("source", { src: this.sourceMpeg, type: "video/mp4" }), index.h("source", { src: this.sourceWebm, type: "video/webm" })), index.h("div", { class: "video-overlay", style: { backgroundColor: 'rgba(0,0,0,0.05)' } }, "..."))))));
+    return (index.h(index.Host, null, index.h("section", { id: "slider", class: "slider-element full-screen", style: { height: '846px' } }, index.h("div", { class: "full-screen dark section nopadding nomargin noborder ohidden", style: { height: '846px' } }, index.h("div", { class: "container" }), index.h("div", { class: "video-wrap" }, index.h("video", { id: "video-home", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, index.h("source", { src: this.sourcempeg, type: "video/mp4" }), index.h("source", { src: this.sourcewebm, type: "video/webm" })), index.h("div", { class: "video-overlay", style: { backgroundColor: 'rgba(0,0,0,0.05)' } }, "..."))))));
   }
 };
 OscwcVideoSlider.style = oscwcVideoSliderCss;

@@ -2,11 +2,11 @@ import { Host, h } from '@stencil/core';
 export class OscwcVideoSlider {
   constructor() {
     this.poster = undefined;
-    this.sourceMpeg = undefined;
-    this.sourceWebm = undefined;
+    this.sourcempeg = undefined;
+    this.sourcewebm = undefined;
   }
   render() {
-    return (h(Host, null, h("section", { id: "slider", class: "slider-element full-screen", style: { height: '846px' } }, h("div", { class: "full-screen dark section nopadding nomargin noborder ohidden", style: { height: '846px' } }, h("div", { class: "container" }), h("div", { class: "video-wrap" }, h("video", { id: "video-home", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, h("source", { src: this.sourceMpeg, type: "video/mp4" }), h("source", { src: this.sourceWebm, type: "video/webm" })), h("div", { class: "video-overlay", style: { backgroundColor: 'rgba(0,0,0,0.05)' } }, "..."))))));
+    return (h(Host, null, h("section", { id: "slider", class: "slider-element full-screen", style: { height: '846px' } }, h("div", { class: "full-screen dark section nopadding nomargin noborder ohidden", style: { height: '846px' } }, h("div", { class: "container" }), h("div", { class: "video-wrap" }, h("video", { id: "video-home", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, h("source", { src: this.sourcempeg, type: "video/mp4" }), h("source", { src: this.sourcewebm, type: "video/webm" })), h("div", { class: "video-overlay", style: { backgroundColor: 'rgba(0,0,0,0.05)' } }, "..."))))));
   }
   static get is() { return "oscwc-video-slider"; }
   static get encapsulation() { return "shadow"; }
@@ -39,7 +39,7 @@ export class OscwcVideoSlider {
         "attribute": "poster",
         "reflect": false
       },
-      "sourceMpeg": {
+      "sourcempeg": {
         "type": "string",
         "mutable": false,
         "complexType": {
@@ -53,10 +53,10 @@ export class OscwcVideoSlider {
           "tags": [],
           "text": ""
         },
-        "attribute": "source-mpeg",
+        "attribute": "sourcempeg",
         "reflect": false
       },
-      "sourceWebm": {
+      "sourcewebm": {
         "type": "string",
         "mutable": false,
         "complexType": {
@@ -70,7 +70,7 @@ export class OscwcVideoSlider {
           "tags": [],
           "text": ""
         },
-        "attribute": "source-webm",
+        "attribute": "sourcewebm",
         "reflect": false
       }
     };

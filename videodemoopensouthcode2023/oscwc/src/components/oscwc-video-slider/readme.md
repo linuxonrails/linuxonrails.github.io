@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default     |
-| ------------ | ------------- | ----------- | -------- | ----------- |
-| `poster`     | `poster`      |             | `string` | `undefined` |
-| `sourceMpeg` | `source-mpeg` |             | `string` | `undefined` |
-| `sourceWebm` | `source-webm` |             | `string` | `undefined` |
+| Property     | Attribute    | Description | Type     | Default     |
+| ------------ | ------------ | ----------- | -------- | ----------- |
+| `poster`     | `poster`     |             | `string` | `undefined` |
+| `sourcempeg` | `sourcempeg` |             | `string` | `undefined` |
+| `sourcewebm` | `sourcewebm` |             | `string` | `undefined` |
 
 
 ----------------------------------------------

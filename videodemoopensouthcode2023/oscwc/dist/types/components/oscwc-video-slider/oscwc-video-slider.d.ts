@@ -1,6 +1,6 @@
 export declare class OscwcVideoSlider {
   poster: string;
-  sourceMpeg: string;
-  sourceWebm: string;
+  sourcempeg: string;
+  sourcewebm: string;
   render(): any;
 }

@@ -7,8 +7,8 @@ import { Component, Host, h, Prop } from '@stencil/core';
 })
 export class OscwcVideoSlider {
   @Prop() poster: string;
-  @Prop() sourceMpeg: string;
-  @Prop() sourceWebm: string;
+  @Prop() sourcempeg: string;
+  @Prop() sourcewebm: string;
 
   render() {
     return (
@@ -29,8 +29,8 @@ export class OscwcVideoSlider {
 
             <div class="video-wrap">
               <video id="video-home" poster={this.poster} preload="auto" loop autoplay muted>
-                <source src={this.sourceMpeg} type="video/mp4"></source>
-                <source src={this.sourceWebm} type="video/webm"></source>
+                <source src={this.sourcempeg} type="video/mp4"></source>
+                <source src={this.sourcewebm} type="video/webm"></source>
               </video>
               <div class="video-overlay" style={{ backgroundColor: 'rgba(0,0,0,0.05)' }}>
                 ...

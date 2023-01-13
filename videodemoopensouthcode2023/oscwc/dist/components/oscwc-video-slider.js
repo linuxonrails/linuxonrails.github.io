@@ -8,17 +8,17 @@ const OscwcVideoSlider$1 = /*@__PURE__*/ proxyCustomElement(class extends HTMLEl
     this.__registerHost();
     this.__attachShadow();
     this.poster = undefined;
-    this.sourceMpeg = undefined;
-    this.sourceWebm = undefined;
+    this.sourcempeg = undefined;
+    this.sourcewebm = undefined;
   }
   render() {
-    return (h(Host, null, h("section", { id: "slider", class: "slider-element full-screen", style: { height: '846px' } }, h("div", { class: "full-screen dark section nopadding nomargin noborder ohidden", style: { height: '846px' } }, h("div", { class: "container" }), h("div", { class: "video-wrap" }, h("video", { id: "video-home", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, h("source", { src: this.sourceMpeg, type: "video/mp4" }), h("source", { src: this.sourceWebm, type: "video/webm" })), h("div", { class: "video-overlay", style: { backgroundColor: 'rgba(0,0,0,0.05)' } }, "..."))))));
+    return (h(Host, null, h("section", { id: "slider", class: "slider-element full-screen", style: { height: '846px' } }, h("div", { class: "full-screen dark section nopadding nomargin noborder ohidden", style: { height: '846px' } }, h("div", { class: "container" }), h("div", { class: "video-wrap" }, h("video", { id: "video-home", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, h("source", { src: this.sourcempeg, type: "video/mp4" }), h("source", { src: this.sourcewebm, type: "video/webm" })), h("div", { class: "video-overlay", style: { backgroundColor: 'rgba(0,0,0,0.05)' } }, "..."))))));
   }
   static get style() { return oscwcVideoSliderCss; }
 }, [1, "oscwc-video-slider", {
     "poster": [1],
-    "sourceMpeg": [1, "source-mpeg"],
-    "sourceWebm": [1, "source-webm"]
+    "sourcempeg": [1],
+    "sourcewebm": [1]
   }]);
 function defineCustomElement$1() {
   if (typeof customElements === "undefined") {
