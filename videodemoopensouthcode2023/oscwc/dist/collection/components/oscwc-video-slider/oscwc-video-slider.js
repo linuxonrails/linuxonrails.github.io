@@ -4,9 +4,10 @@ export class OscwcVideoSlider {
     this.poster = undefined;
     this.sourcempeg = undefined;
     this.sourcewebm = undefined;
+    this.playing = true;
   }
   render() {
-    return (h(Host, null, h("div", { class: "video-wrapper" }, h("video", { class: "video", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, h("source", { src: this.sourcempeg, type: "video/mp4" }), h("source", { src: this.sourcewebm, type: "video/webm" })), h("div", { class: "video-overlay" }))));
+    return (h(Host, null, h("div", { class: "video-wrapper" }, h("video", { class: "video", poster: this.poster, preload: "auto", loop: false, autoplay: true, muted: true }, h("source", { src: this.sourcempeg, type: "video/mp4" }), h("source", { src: this.sourcewebm, type: "video/webm" })), h("div", { class: "video-overlay" }))));
   }
   static get is() { return "oscwc-video-slider"; }
   static get encapsulation() { return "shadow"; }
@@ -73,6 +74,11 @@ export class OscwcVideoSlider {
         "attribute": "sourcewebm",
         "reflect": false
       }
+    };
+  }
+  static get states() {
+    return {
+      "playing": {}
     };
   }
 }

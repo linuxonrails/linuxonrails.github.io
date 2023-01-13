@@ -5,22 +5,19 @@
 }
 
 .video-wrapper {
-  outline: 1px dotted red;
   position: relative;
-  background-color: white;
+  background-color: #000000;
   /* overflow: hidden; */
-  max-height: 810px; /* 405*2 */
+  max-height: 810; /* 405*2 */
   text-align: center;
 }
 
 .video {
-  outline: 1px dashed blue;
   width: 100%;
   max-width: 1440px; /* 720*2 */
 }
 
 .video-overlay {
-	outline: 1px dashed green;
   position: absolute;
 	width: 100%;
 	height: 100%;
