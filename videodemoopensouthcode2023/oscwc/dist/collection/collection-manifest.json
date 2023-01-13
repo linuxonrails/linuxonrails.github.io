@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "./components/my-component/my-component.js",
+    "./components/oscwc-video-slider/oscwc-video-slider.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "2.21.0",
+    "typescriptVersion": "4.9.4"
+  },
+  "collections": [],
+  "bundles": []
+}
