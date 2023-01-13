@@ -6,7 +6,7 @@ export class OscwcVideoSlider {
     this.sourcewebm = undefined;
   }
   render() {
-    return (h(Host, null, h("section", { id: "slider", class: "slider-element full-screen", style: { height: '846px' } }, h("div", { class: "full-screen dark section nopadding nomargin noborder ohidden", style: { height: '846px' } }, h("div", { class: "container" }), h("div", { class: "video-wrap" }, h("video", { id: "video-home", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, h("source", { src: this.sourcempeg, type: "video/mp4" }), h("source", { src: this.sourcewebm, type: "video/webm" })), h("div", { class: "video-overlay", style: { backgroundColor: 'rgba(0,0,0,0.05)' } }, "..."))))));
+    return (h(Host, null, h("div", { class: "video-wrapper" }, h("video", { class: "video", poster: this.poster, preload: "auto", loop: true, autoplay: true, muted: true }, h("source", { src: this.sourcempeg, type: "video/mp4" }), h("source", { src: this.sourcewebm, type: "video/webm" })), h("div", { class: "video-overlay" }))));
   }
   static get is() { return "oscwc-video-slider"; }
   static get encapsulation() { return "shadow"; }
