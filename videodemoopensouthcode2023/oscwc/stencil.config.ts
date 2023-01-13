@@ -23,6 +23,13 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null, // disable service workers
+      copy: [
+        {
+          src: '**/*.{jpg,png}',
+          dest: 'build/components/assets',
+          warn: true,
+        }
+      ]
     },
   ],
 };

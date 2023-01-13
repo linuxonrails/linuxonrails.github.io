@@ -23,7 +23,7 @@ export class OscwcVideoSlider {
             </div>
 
             <div class="video-wrap">
-              <video id="video-home" poster="https://www.maratonjarapalos.com/images/videos/explore.jpg" preload="auto" loop autoplay muted width="320" height="240" style={{ width: '1441px', height: '372.938px', top: '-15.8748px' }}>
+              <video id="video-home" poster="https://www.maratonjarapalos.com/images/videos/explore.jpg" preload="auto" loop autoplay muted>
                 <source src="https://www.maratonjarapalos.com/jarapalos_2020_720p.mp4" type="video/mp4"></source>
                 <source src="https://www.maratonjarapalos.com/images/videos/jarapalos_2020_720p.webm" type="video/webm"></source>
               </video>
